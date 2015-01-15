@@ -1,0 +1,763 @@
+/* ================================================
+ * impact.css
+ =================================================*/
+* {
+   margin: 0px;
+   padding: 0px;
+}
+body {
+    color: black;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    background-color: #dbdbbf;
+    background: url('back-02.gif');
+}
+P 
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+UL
+{
+	padding-left: 40px;
+}
+H2
+{
+    font-size: 1.4em;
+    font-style: italic;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+a { background: transparent; text-decoration: none; }
+a:link { color: #000000; }
+a:visited { color: #000000; }
+a:active { color: #000000; }
+a:hover { color: #000000; }
+
+
+/* ------------------------------------------------
+ * Header
+ -------------------------------------------------*/
+.jagPage
+{
+    width: 766px;
+    position: relative;
+    left: 50%;
+    margin: 10px 0 10px -388px;
+    border: 2px solid black;
+    background-color: #FFFFFF; /*#dbdbbf;*/
+}
+
+.jagBanner
+{
+    background: url('web_2004_b.jpg');
+    border-bottom: black 1px solid;
+    position: relative;
+    height: 125px;
+}
+ 
+.jagUser
+{
+    left: 25px;
+    position: absolute;
+    top: 5px;
+    width: 300px;
+}
+
+.jagWelcome
+{
+    font-weight: bold;
+    font-size: 12pt;
+    float: left;
+    margin-right: 10px;
+    color: #264866;
+}
+
+.jagLogoff {
+    font-size: 8pt;
+    font-family: "Courier New";
+    position: absolute;
+    top: 21px;
+    left: -50px;
+    color: #264866;
+}
+.jagLogoff li
+{
+    display: inline;
+    margin-left: 10px;
+    list-style-type: none;
+}
+.jagLogoff a, .jagLogoff a:link, .jagLogoff a:visited, .jagLogoff a:active
+{
+    color: #264866;
+}
+.jagLogoff a:hover
+{
+    color: Black;
+}
+
+.jagQuickMenu {
+    font-family: "Courier New";
+    background-color: Blue;
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+.jagQuickMenu li
+{
+    list-style: none;
+    text-align: right;
+}
+
+
+/* ------------------------------------------------
+ * Panes
+ -------------------------------------------------*/
+.jagThreePanes
+{
+    width: 766px;
+    background: url('web_2004_c.jpg');
+}
+.jagPaneLeft {
+    width: 210px;
+    float: left;
+    border-right: 1px solid black;
+    margin-left: 0px;
+}
+.jagPaneContent {
+    width: 766px;
+    float: left;
+	background: transparent;
+	/*background-color: #F2F2E9;*/
+}
+.jagPaneContent-L {
+    width: 555px;
+    float: left;
+    border-left: 1px solid black;
+    margin-left: -1px;
+}
+.jagPaneContent-R {
+    width: 576px;
+    float: left;
+    border-right: 1px solid black;
+    margin-right: -1px;
+	background: transparent;
+	background-color: #F2F2E9;
+}
+.jagPaneContent-LR {
+    width: 365px;
+    float: left;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.jagPaneRight {
+    width: 190px;
+    float: left;
+    border-left: 1px solid black;
+    margin-right: -1px;
+}
+
+
+/* ------------------------------------------------
+ * Modules
+ -------------------------------------------------*/
+.jagModule
+{
+    overflow: hidden;
+}
+.jagModuleTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-top: dashed 1px black;
+    border-bottom: dashed 1px black;
+    text-align: center;
+    overflow: hidden;
+    background-color: #dbdbbf;
+}
+.jagModuleTitle ul {
+    color: #264866;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1em;
+    overflow: hidden;
+}
+.jagModuleTitle li {
+    display: inline;
+    list-style-type: none;
+}
+.jagModuleContent {
+    padding: 1px 10px 11px 10px;
+    overflow: hidden;
+}
+
+.jagModuleContent, .jagModuleContent TD
+{
+    font-size: 11pt;
+    font-family: Georgia, 'Book Antiqua' , Arial, Verdana, Helvetica, sans-serif;
+}
+
+.jagModuleContent a { text-decoration: underline; }
+
+.jagSpacer {
+    padding-top: 10px;
+}
+
+/* Alt theme */
+.jagModuleAlt
+{
+}
+
+
+/* ------------------------------------------------
+ * Footer
+ -------------------------------------------------*/
+.jagFooter
+{
+    border-top: black 1px solid;
+    padding-left: 5px;
+    font-size: 8pt;
+    padding-top: 5px;
+    font-family: "Courier New";
+    height: 20px;
+    background-color: white;
+}
+
+
+/* ------------------------------------------------
+ * Generic styles
+ -------------------------------------------------*/
+.jagError
+{
+    font-weight: bold;
+    color: red;
+    border: solid 1px red;
+}
+.jagStrong
+{
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------
+ * Styles for table based modules
+ -------------------------------------------------*/
+.jagTable
+{
+	width: 97%;
+	border-collapse: collapse;
+	border-width: 0px;
+	border-color: silver;
+}
+.jagTable TD
+{
+	border-width: 0px;
+	border-style: solid;
+	border-color: silver;
+	padding: 2px;
+}
+.jagAltRow
+{
+}
+
+.jagTableHeader,
+.jagTableHeader A:link, .jagTableHeader A:visited, .jagTableHeader A:active
+{
+	font-weight: bold;
+	background-color: gainsboro;
+	color: black;
+}
+.jagTableHeader TD
+{
+	border-collapse: collapse;
+	border-bottom-width: 1px;
+	border-bottom-color: Silver;
+}
+
+/* ------------------------------------------------
+ * Styles for list based modules
+ -------------------------------------------------*/
+.jagList
+{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.jagList LI, .jagList A
+{
+    list-style-type: none;
+    margin-right: 2px;
+}
+
+LI.jagItemTitle
+{
+	font-weight: bold;
+}
+LI.jagItemDate
+{
+	font-size: smaller;
+}
+
+
+/* ------------------------------------------------
+ * Calendar module style
+ -------------------------------------------------*/
+.jagCalendar
+{
+	width: 100%;
+}
+.jagCalendarPaging
+{
+	font-weight: bold;
+}
+.jagCalendarTable
+{
+	width: 700px;
+	background-color: dimgray;
+	border-collapse: collapse;
+}
+.jagCalendarTable TH, .jagCalendarTable TD
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: silver;
+}
+.jagCalendarTable TH
+{
+	background-color: palegoldenrod;
+	font-weight: normal;
+}
+.jagCalendarTable TD
+{
+	background-color: white;
+	vertical-align: top;
+	height: 40px;
+}
+.jagCalendarTable TD.jagCalendarCurrentDay
+{
+	background-color: lemonchiffon;
+}
+.jagCalendarTable TD.jagCalendarOtherMonth
+{
+	background-color: whitesmoke;
+}
+.jagCalendarTable UL
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.jagCalendarTable LI
+{
+    display: block;
+    list-style-type: square;
+}
+.jagCalendarTime
+{
+	background-color: whitesmoke;
+}
+
+
+.smallCal .jagCalendarTable
+{
+	width: 100%;
+	font-size: smaller;
+}
+.smallCal .jagCalendarTable TD
+{
+	font-size: smaller;
+	height: 14px;
+}
+
+/* ------------------------------------------------
+ * Pictures module styles
+ -------------------------------------------------*/
+.jagPM_UL
+{
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color:Lime;
+}
+.jagPM_UL UL
+{
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0px;
+}
+.jagPM_UL UL LI
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+.jagPM_UL .jagPM_Image
+{
+    margin-top: 0px;
+    background-color:Fuchsia;
+}
+.jagPM_KB
+{
+    display:none;
+    background-color:Teal;
+    font-size: 0px;
+    padding-left: 0px;
+}
+
+
+/* ------------------------------------------------
+ * PictureElement module styles
+ -------------------------------------------------*/
+.jagModule_PictureElement UL 
+{
+    display: block;
+    margin: 0px;
+}
+.jagModule_PictureElement LI
+{
+    display: inline;
+    list-style-type: none;
+}
+.jagModule_PictureElement A,
+.jagModule_PictureElement span.inactive
+{
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 34px;
+	display: block;
+	float: left;
+}
+.jagModule_PictureElement A#navFirst
+{
+	background-image: url(nav-first.jpg);
+}
+.jagModule_PictureElement A#navPrevious
+{
+	background-image: url(nav-previous.jpg);
+}
+.jagModule_PictureElement A#navNext
+{
+	background-image: url(nav-next.jpg);
+}
+.jagModule_PictureElement A#navLast
+{
+	background-image: url(nav-last.jpg);
+}
+.jagModule_PictureElement span#navFirst
+{
+	background-image: url(nav-first-inactive.jpg);
+}
+.jagModule_PictureElement span#navPrevious
+{
+	background-image: url(nav-previous-inactive.jpg);
+}
+.jagModule_PictureElement span#navNext
+{
+	background-image: url(nav-next-inactive.jpg);
+}
+.jagModule_PictureElement span#navLast
+{
+	background-image: url(nav-last-inactive.jpg);
+}
+.jagModule_PictureElement a span,
+.jagModule_PictureElement span.inactive span
+{
+	display: none;
+}
+
+
+/* ------------------------------------------------
+ * Signin module styles
+ -------------------------------------------------*/
+.jagModule_Signin .jagInput
+{
+    width: 145px;
+}
+
+
+/* ------------------------------------------------
+ * SendThoughts module styles
+ -------------------------------------------------*/
+.jagModule_SendThoughts .jagInput
+{
+    width: 345px;
+}
+.jagModule_SendThoughts TEXTAREA.jagInput
+{
+    width: 345px;
+    height: 150px;
+}
+
+
+/* ------------------------------------------------
+ * Events module styles
+ -------------------------------------------------*/
+.jagModule_Events LI.jagItemText
+{
+	display: block;
+	margin: 0 0 8px 0;
+}
+
+
+/* ------------------------------------------------
+ * Google module styles
+ -------------------------------------------------*/
+.jagModule_Google LI
+{
+	display: block;
+}
+.jagGoogleUrl
+{
+	font-size: smaller;
+	margin: 0 0 4px 0;
+}
+
+
+/* ------------------------------------------------
+ * Search module styles
+ -------------------------------------------------*/
+.jagModule_Search LI
+{
+	display: block;
+}
+
+
+/* ------------------------------------------------
+ * NewsLetter module styles
+ -------------------------------------------------*/
+.jagModule_NewsLetter .jagInput
+{
+    width: 345px;
+}
+.jagModule_NewsLetter TEXTAREA.jagInput
+{
+    width: 345px;
+    height: 150px;
+}
+
+
+/* ------------------------------------------------
+ * FileManager module styles
+ -------------------------------------------------*/
+.jagModule_FileManager .jagInput
+{
+    width: 250px;
+}
+.jagModule_FileManager TEXTAREA.jagInput
+{
+    width: 345px;
+    height: 150px;
+}
+.jagModule_FileManager .jagTopSection
+{
+	width: 97%;
+}
+.jagModule_FileManager .jagBottomSection
+{
+	width: 97%;
+}
+
+
+/* ------------------------------------------------
+ * Popup window of FileEditor
+ -------------------------------------------------*/
+.jagModule_FileEdit TEXTAREA
+{
+	width: 590px;
+	height: 660px;
+}
+
+
+/* ------------------------------------------------
+ * FileManager module styles
+ -------------------------------------------------*/
+.jagModule_QuickSurvey .jagTable
+{
+    background-color: Yellow;
+    margin-bottom: 10px;
+}
+.jagModule_QuickSurvey .jagTableFooter TD
+{
+    font-size: smaller;
+    background-color: whitesmoke;
+}
+.jagModule_QuickSurvey .jagList LI
+{
+	display: block;
+	margin: 0 0 0px 0;
+}
+
+
+/* ------------------------------------------------
+ * DataProcessor module styles
+ -------------------------------------------------*/
+.jagModule_DataProcessorEdit .jagInput
+{
+	width: 700px;
+}
+.jagModule_DataProcessorEdit #jagEditor_Plain TEXTAREA
+{
+	width: 700px;
+	height: 300px;
+}
+
+
+/* ------------------------------------------------
+ * Custom styles
+ -------------------------------------------------*/
+.highlight
+{
+    border-top: #264866 2px solid;
+    padding-bottom: 5px;
+    margin-left: 35px;
+    width: 80%;
+    padding-top: 5px;
+    border-bottom: #264866 2px solid;
+    text-align: justify;
+}
+#imageBar
+{
+    text-align: center;
+}
+#imageBar P
+{
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    border-bottom: 1px dashed;
+}
+
+/* List of items */
+.mainList
+{
+	border-right: gainsboro 1px solid;
+	padding-right: 10px;
+	border-top: gainsboro 1px solid;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	margin-left: 30px;
+	border-left: gainsboro 1px solid;
+	margin-right: 20px;
+	padding-top: 5px;
+	border-bottom: gainsboro 1px solid;
+	background-color: whitesmoke;
+}
+.mainList UL
+{
+	list-style: square none outside;
+	margin-bottom: 5px;
+}
+#idServiceList
+{
+	list-style: square url(star.gif) outside;
+}
+#idProductList
+{
+	list-style: square url(product.gif) outside;
+}
+#idSolutionList
+{
+	list-style: square url(go.gif) outside;
+}
+.mainList LI A:hover
+{
+	text-decoration: underline;
+}
+
+#idNospacing .jagModuleContent
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* */
+.phrase
+{
+	border-right: 4px solid;
+	padding-right: 15px;
+	border-top: 2px;
+	margin-top: 0px;
+	padding-left: 15px;
+	font-size: 14pt;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	border-left: #e7e7d6 4px solid;
+	color: #264866;
+	line-height: 20pt;
+	margin-right: 10px;
+	padding-top: 10px;
+	font-family: Verdana, Tahoma;
+	text-align: right;
+}
+
+.jagModule_Signin TABLE
+{
+	width: 100%;
+}
+.jagModule_Signin TD
+{
+    text-align: center;
+}
+
+#page-contact .jagThreePanes
+{
+	background: transparent;
+	background-color: #dbdbbf;
+}
+
+#page-admin .jagThreePanes
+{
+	background: transparent;
+	background-color: #F2F2E9;
+}
+
+/* ------------------------------------------------
+ *iFMS view table
+ -------------------------------------------------*/
+ div.jagEditTable
+{
+	width: 790px;
+	border: lightgray 1px solid;
+	margin-bottom: 10px;
+}
+table.jagEditTable 
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+table.jagEditTable  td
+{
+	vertical-align: top;
+	padding-left: 10px;
+}
+table.jagEditTable  tr
+{
+	border-bottom: #eeeeee 1px solid;
+}
+table.jagEditTable  tr.jagSection
+{
+	font-weight: bold;
+	background-color: #eeeeee;
+}
+table.jagEditTable  tr.jagSection td
+{
+	border-bottom: lightgray 1px solid;
+}
+table.jagEditTable  td.jagLabelCol
+{
+	width: 120px;
+	background-color: whitesmoke;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: right;
+	border-right: lightgray 1px solid;
+}

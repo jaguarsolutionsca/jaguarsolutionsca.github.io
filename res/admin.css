@@ -1,0 +1,273 @@
+/* ================================================
+ * admin.css
+ =================================================*/
+/*@import url('menu.css'); this would be nice but the javascript would be run *before* the css is loaded*/
+
+/* ------------------------------------------------
+ * Editor boxes
+ -------------------------------------------------*/
+#jagEditor_Plain TEXTAREA
+{
+    width: 700px;
+    height: 500px;
+}
+#jagEditor_FTB .jagEditor
+{
+    width: 700px;
+    height: 500px;
+    display: none;
+}
+TEXTAREA#MobileSummary, TEXTAREA#MobileDetails
+{
+    width: 700px;
+    height: 50px;
+}
+
+#jagAdminTabsList SELECT
+{
+    width: 400px;
+    height: 250px;
+}
+
+SELECT#leftPane,
+SELECT#contentPane,
+SELECT#rightPane
+{
+    width: 150px;
+}
+
+
+/* ------------------------------------------------
+ * Input boxes
+ -------------------------------------------------*/
+.jagInput
+{
+    width: 250px;
+}
+TEXTAREA.jagInput
+{
+    width: 250px;
+    height: 100px;
+}
+.jagInteger
+{
+    width: 50px;
+}
+.jagByte
+{
+    width: 25px;
+}
+.jagPhone
+{
+    width: 100px;
+}
+.jagDatePicker
+{
+    border-style: Solid;
+    border-width: 1px;
+}
+.jagDatePicker INPUT
+{
+}
+
+
+/* ------------------------------------------------
+ * Buttons
+ -------------------------------------------------*/
+.jagLinkButton
+{
+    border: #202020 1px solid;
+    padding: 3px 6px 3px 6px;
+    font-weight: bold;
+    background: #9d9582;
+    margin: 0px;
+    overflow: visible;
+    color: black;
+    line-height: 25px;
+    font-size: 10px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-align: center;
+    margin-right: 5px;
+}
+A.jagLinkButton:link,
+A.jagLinkButton:visited,
+A.jagLinkButton:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+A.jagLinkButton:hover
+{
+    background: #ccc4a4;
+    color: #000000;
+}
+
+
+INPUT.jagSubmitButton
+{
+    border: #202020 1px solid;
+    padding: 0px 3px 0px 3px;
+    font-weight: bold;
+    font-size: 10px;
+    background: #9d9582;
+    margin: 0px;
+    overflow: visible;
+    cursor: hand;
+    color: black;
+    line-height: 18px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-align: center;
+}
+INPUT.jagSubmitButtonOver
+{
+    background: #ccc4a4;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------
+ * Custom module styles
+ * Used by Database Table Edit
+ -------------------------------------------------*/
+.dbTable 
+{
+    border: solid 2px black;
+}
+.dbTable TD
+{
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: gray 1px solid;
+}
+.dbHeader
+{
+    background-color: #a0a0a0;
+}
+.dbHeader TD
+{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.dbRow
+{
+    background-color: #FFFFFF;
+    text-align: left;
+}
+.dbAltRow
+{
+    background-color: #F9F9F9;
+    text-align: left;
+}
+.dbPager
+{
+    background-color: #A0A0A0;
+}
+
+.dbPager a:link,
+.dbPager a:visited,
+.dbPager a:active
+{
+    border-right: #202020 1px solid;
+    padding-right: 6px;
+    border-top: #202020 1px solid;
+    padding-left: 6px;
+    font-weight: bold;
+    font-size: 11px;
+    background: #a6afbd;
+    padding-bottom: 3px;
+    margin: 0px;
+    overflow: visible;
+    border-left: #202020 1px solid;
+    color: black;
+    line-height: 25px;
+    padding-top: 3px;
+    border-bottom: #202020 1px solid;
+    text-align: center;
+}
+.dbPager a:hover
+{
+    background: #d3d3d3;
+    color: #000000;
+    text-decoration: none;
+}
+
+.dbEditTable
+{
+    border-right: darkgray 1px solid;
+    padding-right: 0px;
+    border-top: darkgray 1px solid;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    border-left: darkgray 1px solid;
+    padding-top: 0px;
+    border-bottom: darkgray 1px solid;
+    background-color: gainsboro;
+}
+.dbEditTable TD
+{
+    border: 0px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.dbNumber
+{
+    width: 75px;
+}
+.dbString
+{
+    width: 250px;
+}
+.dbText
+{
+    width: 250px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.dbDate
+{
+    width: 75px;
+}
+.dbBit
+{
+    width: 35px;
+}
+.dbCombo
+{
+    width: 150px;
+}
+
+
+/* ------------------------------------------------
+ * Misc styles
+ -------------------------------------------------*/
+TABLE TD.jagSection
+{
+    padding: 10px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 10pt;
+    border-bottom:  solid 2px green;
+}
+
+.jagTimestamp
+{
+    font-size: smaller;
+}
+
+
+/* Just as reference. Expression = JavaScript */
+.qaz img
+{
+    border: solid 1px #999999;
+    vertical-align: middle;
+    margin-top: expression(( 75 - this.height ) / 2); 
+}
