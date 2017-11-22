@@ -1,0 +1,50 @@
+
+body.js-login { 
+    background-image: url(../img/LZHSWSMKVNEIPPOJEFLU6FXBGM.jpg) ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #2f4050; /*#999;*/
+}
+
+body.js-login .loginColumns {
+    background-color: white;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+body.js-login .ibox-content {
+    border: 0;
+}
+
+body.js-index .js-menu .widget {
+    min-height: 225px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+/**/
+.table thead > tr > th.np-sorting {
+    border-bottom: 2px solid #888;
+}
+.table thead > tr > th.np-sorting i.fa-sort-asc {
+    vertical-align: bottom;
+}
+.table thead > tr > th.np-sorting i.fa-sort-desc {
+    vertical-align: top;
+}
+.table tbody tr {
+    cursor: pointer;
+}
+.table .btn {
+    font-weight: bold;
+}
+
+.text-extra-muted {
+    color: #AAA;
+}
+
+.no-left-padding {
+    padding-left: 0 !important;
+}

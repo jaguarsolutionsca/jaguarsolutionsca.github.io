@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QTIS | Job Details</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+<body class="js-index">
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">Christian Trépanier</strong>
+                                    </span>
+                                    <span class="text-muted text-xs block">Student
+                                        <b class="caret"></b>
+                                    </span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            QTIS
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-label">Home</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="jobs.html">
+                            <i class="fa fa-check-circle-o"></i>
+                            <span class="nav-label">Jobs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="training.html">
+                            <i class="glyphicon glyphicon-blackboard"></i>
+                            <span class="nav-label">Training</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="personnel.html">
+                            <i class="fa fa-users"></i>
+                            <span class="nav-label">Personnel</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="glyphicon glyphicon-apple"></i>
+                            <span class="nav-label">Instructor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-user-circle-o"></i>
+                            <span class="nav-label">Admin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <i class="fa fa-print"></i>
+                            <span class="nav-label">Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-list"></i>
+                            <span class="nav-label">Lookups</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #2f4050;">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <form role="search" class="navbar-form-custom" method="post" action="#">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to QTIS</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-12">
+                    <h2><i class="fa fa-check-circle-o"></i> Job Details</h2>
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <strong>[AREP] Agency Representative</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tabs-container">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#tab-1" aria-expanded="true"> General Info</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#tab-2" aria-expanded="false"> Prerequisites</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane active">
+                                    <div class="panel-body">
+
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">ID</label>
+                                                <div class="col-lg-10">
+                                                    <span class="help-block m-b-none">AREP</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Job Title</label>
+                                                <div class="col-lg-10">
+                                                    <span class="help-block m-b-none">Agency Representative</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">ICS Function</label>
+                                                <div class="col-lg-10">
+                                                    <span class="help-block m-b-none">Command</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Certification Period</label>
+                                                <div class="col-lg-10">
+                                                    <span class="help-block m-b-none">0 months</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Fitness Level</label>
+                                                <div class="col-lg-10">
+                                                    <span class="help-block m-b-none">Light</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Type Code</label>
+                                                <div class="col-lg-10">
+                                                    <span class="help-block m-b-none"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Active</label>
+                                                <div class="col-lg-10">
+                                                    <span class="help-block m-b-none">
+                                                        <i class="fa fa-check-square-o"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div id="tab-2" class="tab-pane">
+                                    <div class="panel-body">
+
+                                        <div class="row">
+                                            <div class="col col-lg-6">
+                                                <div class="ibox">
+                                                    <div class="ibox-title">
+                                                        <h5>Training Prerequisites</h5>
+                                                    </div>
+                                                    <div class="ibox-content table-responsive">
+                                                        <table class="table table-condensed table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th>
+                                                                        <button type="button" class="btn btn-link">Course ID</button>
+                                                                    </th>
+                                                                    <th class="np-sorting">
+                                                                        <button type="button" class="btn btn-link">Course Title&nbsp;
+                                                                            <i class="fa fa-sort-asc"></i>
+                                                                        </button>
+                                                                    </th>
+                                                                    <th>
+                                                                        <button type="button" class="btn btn-link">Standard Level</button>
+                                                                    </th>
+                                                                    <th>
+                                                                        <button type="button" class="btn btn-link">Required</button>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-extra-muted">1</td>
+                                                                    <td>CD-SFL</td>
+                                                                    <td>Safety on the Fireline CD</td>
+                                                                    <td>Provincial</td>
+                                                                    <td><i class="fa fa-check-square-o"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-extra-muted">2</td>
+                                                                    <td>FA-2</td>
+                                                                    <td>Standard First Aid & CPR</td>
+                                                                    <td>Regional</td>
+                                                                    <td><i class="fa fa-check-square-o"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-extra-muted">3</td>
+                                                                    <td>I-200</td>
+                                                                    <td>Basic ICS</td>
+                                                                    <td>Provincial</td>
+                                                                    <td><i class="fa fa-check-square-o"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-extra-muted">3</td>
+                                                                    <td>I-300</td>
+                                                                    <td>Intermediate ICS</td>
+                                                                    <td>Provincial</td>
+                                                                    <td><i class="fa fa-check-square-o"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-extra-muted">3</td>
+                                                                    <td>L-380</td>
+                                                                    <td>Fireline Leadership</td>
+                                                                    <td>Provincial</td>
+                                                                    <td><i class="fa fa-square-o"></i></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col col-lg-6">
+                                                <div class="ibox">
+                                                    <div class="ibox-title">
+                                                        <h5>Experience Prerequisites</h5>
+                                                    </div>
+                                                    <div class="ibox-content table-responsive">
+                                                        <table class="table table-condensed table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th>
+                                                                        <button type="button" class="btn btn-link">Job ID</button>
+                                                                    </th>
+                                                                    <th class="np-sorting">
+                                                                        <button type="button" class="btn btn-link">Job Title&nbsp;
+                                                                            <i class="fa fa-sort-asc"></i>
+                                                                        </button>
+                                                                    </th>
+                                                                    <th>
+                                                                        <button type="button" class="btn btn-link">Qualification</button>
+                                                                    </th>
+                                                                    <th>
+                                                                        <button type="button" class="btn btn-link">Comments</button>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-extra-muted">1</td>
+                                                                    <td>TFLD</td>
+                                                                    <td>Task Force Leader</td>
+                                                                    <td>Qualified</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-t-lg">
+                    <div class="col-lg-12">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Personnel Qualified as Agency Representative</h5>
+                            </div>
+                            <div class="ibox-content table-responsive">
+                                <table class="table table-condensed table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">ID</button>
+                                            </th>
+                                            <th class="np-sorting">
+                                                <button type="button" class="btn btn-link">Name&nbsp;
+                                                    <i class="fa fa-sort-asc"></i>
+                                                </button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">Title</button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">Location</button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">Fitness</button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">Comments</button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">Qualifications</button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">Experience</button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">Expiry (&gt;6 mo.)</button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-link">Expiry (&lt;6 mo.)</button>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="text-extra-muted">1</td>
+                                            <td>1234</td>
+                                            <td>Mousseau, Marc</td>
+                                            <td>Air Attack Officer</td>
+                                            <td>Winnipeg</td>
+                                            <td>Moderate</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>September 15, 2018</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-extra-muted">2</td>
+                                            <td>9876</td>
+                                            <td>Obama, Donald</td>
+                                            <td>POTUS</td>
+                                            <td>Winnipeg</td>
+                                            <td>Light</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>November 4, 2020</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-extra-muted">3</td>
+                                            <td>9341</td>
+                                            <td>Trépanier, Christian</td>
+                                            <td>Consultant</td>
+                                            <td>Ottawa</td>
+                                            <td>Moderate</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="color:red;">January 20, 2018</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="pull-right">
+                    Version [alpha]
+                </div>
+                <div>
+                    Copyright
+                    <strong>Jaguar Solutions</strong> &copy; 2017
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.1/metisMenu.min.js"></script>
+    <script src="js/inspinia.js"></script>
+
+</body>
+
+</html>
