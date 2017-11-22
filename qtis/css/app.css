@@ -34,7 +34,7 @@ body.js-index .js-menu .widget {
 .table thead > tr > th.np-sorting i.fa-sort-desc {
     vertical-align: top;
 }
-.table tbody tr {
+.table.table-hover tbody tr {
     cursor: pointer;
 }
 .table .btn {
@@ -47,4 +47,39 @@ body.js-index .js-menu .widget {
 
 .no-left-padding {
     padding-left: 0 !important;
+}
+
+.agile-list {
+    font-size: larger;
+}
+
+
+.report-wrapper {
+    display: none;
+}
+
+.report .wrapper {
+    display: none;
+}
+.report .footer {
+    display: none;
+}
+.report .report-wrapper {
+    display: block;
+    font-size: 75%;
+}
+.report .report-wrapper h2 { font-size: 18px; }
+.report .report-wrapper h4 { font-size: 14px; font-weight: normal; }
+
+.report-header {
+    margin-bottom: 24px;
+}
+
+@media print {
+    .report .wrapper {
+        padding: 0.5in 0 0 0;
+    }
+    .report .ibox-content {
+        padding: 0;
+    }
 }
