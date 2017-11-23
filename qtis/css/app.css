@@ -54,6 +54,62 @@ body.js-index .js-menu .widget {
 }
 
 
+.table-header-rotated {
+    border-collapse: collapse;
+}
+.table-header-rotated td {
+    width: 30px;
+}
+.table-header-rotated td {
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+}
+.table-header-rotated th.rotate {
+    height: 140px;
+    white-space: nowrap;
+}
+/*
+.table-header-rotated th.rotate > div.r-w {
+    transform: translate(43px, 49px) rotate(315deg);
+    width: 30px;
+}
+.table-header-rotated th.rotate > div.r-w > div.r-wt {
+    margin-left: -16px;
+}
+.table-header-rotated th.rotate > div.r-w > div.r-wb {
+    border-bottom: 1px solid #ccc;
+    padding: 0 16px 8px 0;
+    width: 160px;
+}
+*/
+.table-header-rotated th.rotate > div.r-w {
+    transform: translate(46px, 50px) rotate(315deg);
+    width: 30px;
+}
+.table-header-rotated th.rotate > div.r-w > div.r-wt {
+    margin-left: -11px;
+    padding: 0 0 2px 4px;
+}
+.table-header-rotated th.rotate > div.r-w > div.r-wb {
+    border-bottom: 1px solid #ccc;
+    width: 160px;
+}
+/**/
+.table-header-rotated th.row-header {
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.js-matrix .name {
+    font-weight: bold;
+    text-align: left;
+}
+.js-matrix .late {
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+
 .report-wrapper {
     display: none;
 }
@@ -69,7 +125,8 @@ body.js-index .js-menu .widget {
     font-size: 75%;
 }
 .report .report-wrapper h2 { font-size: 18px; }
-.report .report-wrapper h4 { font-size: 14px; font-weight: normal; }
+.report .report-wrapper h3 { font-size: 14px; font-weight: normal; }
+.report .report-wrapper h4 { font-size: 12px; font-weight: normal; }
 
 .report-header {
     margin-bottom: 24px;

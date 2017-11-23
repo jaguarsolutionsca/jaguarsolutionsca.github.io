@@ -131,7 +131,7 @@
                     </h2>
                     <ol class="breadcrumb">
                         <li class="active">
-                            <strong>Training Records for an Employee</strong>
+                            <strong>Training Matrix</strong>
                         </li>
                     </ol>
                 </div>
@@ -147,11 +147,12 @@
                             <div class="ibox-content">
 
                                 <div class="row">
-                                    <div class="col-sm-12">
+                                    <div class="col-lg-4">
                                         <div class="form-group">
                                             <label class="control-label" for="status">Employee</label>
                                             <select name="status" id="status" class="form-control">
-                                                <option selected="">Affleck, Sheryl</option>
+                                                <option selected="">&lt;None Selected&gt;</option>
+                                                <option>Affleck, Sheryl</option>
                                                 <option>Anderson, Farrah</option>
                                                 <option>Antichow, Linda</option>
                                                 <option>Antichow, Wayne</option>
@@ -166,6 +167,33 @@
                                                 <option>Bear, Lisa</option>
                                                 <option>Bear, Belinda</option>
                                                 <option>Belanger, Robert</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="status">Location</label>
+                                            <select name="status" id="status" class="form-control">
+                                                <option>&lt;None Selected&gt;</option>
+                                                <option selected="">Cross Lake</option>
+                                                <option>Island Lake</option>
+                                                <option>Norway House</option>
+                                                <option>Paint</option>
+                                                <option>Pukatawagan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="status">Target Training</label>
+                                            <select name="status" id="status" class="form-control">
+                                                <option>All Training</option>
+                                                <option selected="">All Positions</option>
+                                                <option>Fireline</option>
+                                                <option>Fire Management</option>
+                                                <option>Equipement Specific</option>
+                                                <option>Incident</option>
+                                                <option>Fire Program</option>
                                             </select>
                                         </div>
                                     </div>
@@ -186,59 +214,122 @@
 
             <div class="wrapper wrapper-content report-wrapper">
                 <div style="margin-bottom: 16px;">
-                    <a href="report-01-print.html" target="_blank" class="btn btn-primary">
+                    <a href="report-02-print.html" target="_blank" class="btn btn-primary">
                         <i class="fa fa-print"></i> Print Report
                     </a>
                 </div>
                 <div class="ibox">
                     <div class="ibox-content">
                         <div class="report-header">
-                            <h2>Training Records</h2>
-                            <h3>Employee: Sheryl Affleck</h3>
-                            <h4>Report created on November 19, 2017</h4>
+                            <h2>Training Matrix</h2>
+                            <h3>Location: Cross Lake, Target: All Positions</h3>
+                            <h4>Report created on November 22, 2017</h4>
                         </div>
-                        <table class="table">
+                        <table class="table-header-rotated js-matrix">
                             <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>Course ID</th>
-                                    <th>Course Title</th>
-                                    <th>Planned</th>
-                                    <th>Completed</th>
-                                    <th>Expiry</th>
-                                    <th>Grade</th>
-                                    <th>Comments</th>
-                                </tr>
+                                    <th style="width: 120px;"></th>
+                                    <th style="width: 80px;"></th>
+                                    <th style="width: 100px;"></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">Employee Orientation</div><div class="r-wb">&nbsp;</div></div></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">Respectful Workplace</div><div class="r-wb">&nbsp;</div></div></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">First Aid and CPR</div><div class="r-wb">&nbsp;</div></div></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">WHMIS</div><div class="r-wb">&nbsp;</div></div></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">Hearing Conservation</div><div class="r-wb">&nbsp;</div></div></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">TDG Ground</div><div class="r-wb">&nbsp;</div></div></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">TDG Air</div><div class="r-wb">&nbsp;</div></div></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">Restricted Radio Operator</div><div class="r-wb">&nbsp;</div></div></th>
+                                    <th style="width: 60px;" class="rotate"><div class="r-w"><div class="r-wt">Fire Administration</div><div class="r-wb">&nbsp;</div></div></th>
+                                </tr> 
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="text-extra-muted">1</td>
-                                    <td>I-200</td>
-                                    <td>Basic ICS</td>
-                                    <td>September 15, 2016</td>
-                                    <td>September 20, 2016</td>
+                                    <td colspan="3" style="border-top:0; border-left: 0;"></td>
+                                    <td colspan="8"><b>All Positions<br>[Mandatory]</b></td>
+                                    <td><b>All<br>[Opt]</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Name</b></td>
+                                    <td><b>Work<br>Location</b></td>
+                                    <td><b>Present<br>Position</b></td>
+                                    <td><b>One Time<br>4-8 Hours</b></td>
+                                    <td><b>One Time<br>4 Hours</b></td>
+                                    <td><b>3 Years<br>16 Hours</b></td>
+                                    <td><b>Annual<br>2 Hours</b></td>
+                                    <td><b>Annual<br>10 min</b></td>
+                                    <td><b>2 Years<br>4 Hours</b></td>
+                                    <td><b>2 Years<br>6 Hours</b></td>
+                                    <td><b>One Time<br>2-4 Hours</b></td>
+                                    <td><b>One Time<br>8 Hours</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="name">McLeod, Darren</td>
+                                    <td>Cross Lake</td>
+                                    <td>Crew Leader (4)</td>
                                     <td></td>
-                                    <td>Pass</td>
+                                    <td></td>
+                                    <td class="late">May 14</td>
+                                    <td>Aug 11</td>
+                                    <td>Aug 14</td>
+                                    <td>Aug 16</td>
+                                    <td>Aug 16</td>
+                                    <td>Aug 4</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="text-extra-muted">2</td>
-                                    <td>I-300</td>
-                                    <td>Intermediate ICS</td>
-                                    <td>March 15, 2017</td>
-                                    <td>March 20, 2017</td>
+                                    <td class="name">Catcheway, Ken</td>
+                                    <td>Cross Lake</td>
+                                    <td>Crew Member</td>
+                                    <td><i class="fa fa-check"></i></td>
                                     <td></td>
+                                    <td></td>
+                                    <td>Aug 11</td>
+                                    <td>Aug 14</td>
+                                    <td>Aug 16</td>
+                                    <td>Aug 16</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="text-extra-muted">3</td>
-                                    <td>I-100</td>
-                                    <td>Introduction to ICS</td>
-                                    <td>August 15, 2016</td>
-                                    <td>August 17, 2016</td>
+                                    <td class="name">Monias, Phillex</td>
+                                    <td>Cross Lake</td>
+                                    <td>Crew Member</td>
                                     <td></td>
-                                    <td>Pass</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Aug 16</td>
+                                    <td>Aug 16</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Umperville, Steven</td>
+                                    <td>Cross Lake</td>
+                                    <td>Crew Member</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Aug 16</td>
+                                    <td></td>
+                                    <td>Apr 15</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Whiskey, Tomothy</td>
+                                    <td>Cross Lake</td>
+                                    <td>Crew Member</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="late">May 14</td>
+                                    <td>Aug 11</td>
+                                    <td>Aug 14</td>
+                                    <td>Aug 16</td>
+                                    <td>Aug 16</td>
+                                    <td>Aug 9</td>
                                     <td></td>
                                 </tr>
                             </tbody>
