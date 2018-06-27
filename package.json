@@ -4,11 +4,5 @@
   "description": "Jaguar Solutions - Website",
   "main": "index.html",
   "author": "Christian Trépanier",
-  "license": "MIT",
-  "scripts": {
-    "dev": "lite-server"
-  },
-  "optionalDependencies": {
-    "lite-server": "^2.3.0"
-  }
+  "license": "MIT"
 }
